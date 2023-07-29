@@ -1,0 +1,105 @@
+<div style="overflow-x: auto; white-space: nowrap;">
+    <div class="image-container" style="display: inline-block; margin-right: 10px;">
+      <img src="https://aandy3.files.wordpress.com/2023/07/iphone-14-pro-max.jpeg" alt="Image 1" width="150" height="150">
+      <p><a href="https://aandy3.wordpress.com/iphone/">Product 1</a></p>
+      <p style="color: white; background-color: #14453D;">EGP 6400 and under</p>
+    </div>
+    <div class="image-container" style="display: inline-block; margin-right: 10px;">
+      <img src="https://aandy3.files.wordpress.com/2023/07/iphone-13-promax.jpeg" alt="Image 2" width="150" height="150">
+      <p><a href="https://aandy3.wordpress.com/iphone/">Product 2</a></p>
+      <p style="color: white; background-color: #14453D;">EGP 6200 and under</p>
+    </div>
+    <div class="image-container" style="display: inline-block; margin-right: 10px;">
+      <img src="https://aandy3.files.wordpress.com/2023/07/s23-ultra_1.jpeg" alt="Image 3" width="150" height="150">
+      <p><a href="https://aandy3.wordpress.com/samsung/">Product 3</a></p>
+      <p style="color: white; background-color: #14453D;">EGP 6400 and under</p>
+    </div>
+    <div class="image-container" style="display: inline-block; margin-right: 10px;">
+        <img src="https://aandy3.files.wordpress.com/2023/07/s23-ultra_1.jpeg" alt="Image 3" width="150" height="150">
+        <p><a href="https://aandy3.wordpress.com/samsung/">Product 3</a></p>
+        <p style="color: white; background-color: #14453D;">EGP 6400 and under</p>
+    </div>
+    <div class="image-container" style="display: inline-block; margin-right: 10px;">
+        <img src="https://aandy3.files.wordpress.com/2023/07/s23-ultra_1.jpeg" alt="Image 3" width="150" height="150">
+        <p><a href="https://aandy3.wordpress.com/samsung/">Product 3</a></p>
+        <p style="color: white; background-color: #14453D;">EGP 6400 and under</p>
+    </div>
+    <div class="image-container" style="display: inline-block; margin-right: 10px;">
+        <img src="https://aandy3.files.wordpress.com/2023/07/s23-ultra_1.jpeg" alt="Image 3" width="150" height="150">
+        <p><a href="https://aandy3.wordpress.com/samsung/">Product 3</a></p>
+        <p style="color: white; background-color: #14453D;">EGP 6400 and under</p>
+    </div>
+    <div class="image-container" style="display: inline-block; margin-right: 10px;">
+        <img src="https://aandy3.files.wordpress.com/2023/07/s23-ultra_1.jpeg" alt="Image 3" width="150" height="150">
+        <p><a href="https://aandy3.wordpress.com/samsung/">Product 3</a></p>
+        <p style="color: white; background-color: #14453D;">EGP 6400 and under</p>
+    </div>
+    <div class="image-container" style="display: inline-block; margin-right: 10px;">
+        <img src="https://aandy3.files.wordpress.com/2023/07/s23-ultra_1.jpeg" alt="Image 3" width="150" height="150">
+        <p><a href="https://aandy3.wordpress.com/samsung/">Product 3</a></p>
+        <p style="color: white; background-color: #14453D;">EGP 6400 and under</p>
+    </div>
+    <div class="image-container" style="display: inline-block; margin-right: 10px;">
+        <img src="https://aandy3.files.wordpress.com/2023/07/s23-ultra_1.jpeg" alt="Image 3" width="150" height="150">
+        <p><a href="https://aandy3.wordpress.com/samsung/">Product 3</a></p>
+        <p style="color: white; background-color: #14453D;">EGP 6400 and under</p>
+    </div>
+    <div class="image-container" style="display: inline-block; margin-right: 10px;">
+        <img src="https://aandy3.files.wordpress.com/2023/07/s23-ultra_1.jpeg" alt="Image 3" width="150" height="150">
+        <p><a href="https://aandy3.wordpress.com/samsung/">Product 3</a></p>
+        <p style="color: white; background-color: #14453D;">EGP 6400 and under</p>
+    </div>
+    <div class="image-container" style="display: inline-block; margin-right: 10px;">
+        <img src="https://aandy3.files.wordpress.com/2023/07/s23-ultra_1.jpeg" alt="Image 3" width="150" height="150">
+        <p><a href="https://aandy3.wordpress.com/samsung/">Product 3</a></p>
+        <p style="color: white; background-color: #14453D;">EGP 6400 and under</p>
+    </div>
+    <div class="image-container" style="display: inline-block; margin-right: 10px;">
+        <img src="https://aandy3.files.wordpress.com/2023/07/s23-ultra_1.jpeg" alt="Image 3" width="150" height="150">
+        <p><a href="https://aandy3.wordpress.com/samsung/">Product 3</a></p>
+        <p style="color: white; background-color: #14453D;">EGP 6400 and under</p>
+    </div>
+    <div class="image-container" style="display: inline-block; margin-right: 10px;">
+        <img src="https://aandy3.files.wordpress.com/2023/07/s23-ultra_1.jpeg" alt="Image 3" width="150" height="150">
+        <p><a href="https://aandy3.wordpress.com/samsung/">Product 3</a></p>
+        <p style="color: white; background-color: #14453D;">EGP 6400 and under</p>
+    </div>
+  </div>
+  
+  <style>
+    .image-container {
+      text-align: center;
+    }
+  </style>
+  
+  <script>
+    const container = document.querySelector('[style="overflow-x: auto; white-space: nowrap;"]');
+    let scrollPos = 0;
+    let isDown = false;
+    let startX, endX;
+  
+    container.addEventListener('mousedown', (e) => {
+      isDown = true;
+      startX = e.pageX - container.offsetLeft;
+      scrollPos = container.scrollLeft;
+    });
+  
+    container.addEventListener('mouseleave', () => {
+      isDown = false;
+    });
+  
+    container.addEventListener('mouseup', (e) => {
+      isDown = false;
+      endX = e.pageX - container.offsetLeft;
+      const distance = endX - startX;
+      container.scrollLeft = scrollPos - distance;
+    });
+  
+    container.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - container.offsetLeft;
+      const walk = x - startX;
+      container.scrollLeft = scrollPos - walk;
+    });
+  </script>
