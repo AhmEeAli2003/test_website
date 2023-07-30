@@ -2081,7 +2081,15 @@ var actionbardata = {"siteID":"221551516","siteURL":"http:\/\/aandy3.wordpress.c
 <div style="width: 100%;height: 2px;background-color: #006400">
 </div>
 
+<script>
+window.addEventListener('load', () => {
+  const navMenu = document.querySelector('.nav-menu');
 
+  if (window.innerWidth <= 768) {
+    navMenu.style.display = 'none';
+  }
+});
+</script>
 <nav class="has-background has-tertiary-background-color has-small-font-size is-responsive items-justified-center wp-block-navigation has-small-font-size is-content-justification-center is-layout-flex wp-container-6 wp-block-navigation-is-layout-flex" aria-label="التنقل" data-wp-interactive="" data-wp-context="{ &quot;core&quot;: { &quot;navigation&quot;: { &quot;overlayOpenedBy&quot;: {}, &quot;type&quot;: &quot;overlay&quot;, &quot;roleAttribute&quot;: &quot;&quot; } } }"><button aria-haspopup="true" aria-label="افتح القائمة" class="wp-block-navigation__responsive-container-open " data-micromodal-trigger="modal-5" data-wp-on--click="actions.core.navigation.openMenuOnClick" data-wp-on--keydown="actions.core.navigation.handleMenuKeydown"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="7.5" width="16" height="1.5"></rect><rect x="4" y="15" width="16" height="1.5"></rect></svg></button>
 			<div class="wp-block-navigation__responsive-container" style="" id="modal-5" data-wp-class--has-modal-open="selectors.core.navigation.isMenuOpen" data-wp-class--is-menu-open="selectors.core.navigation.isMenuOpen" data-wp-effect="effects.core.navigation.initMenu" data-wp-on--keydown="actions.core.navigation.handleMenuKeydown" data-wp-on--focusout="actions.core.navigation.handleMenuFocusout" tabindex="-1">
 				<div class="wp-block-navigation__responsive-close" tabindex="-1" data-micromodal-close="">
