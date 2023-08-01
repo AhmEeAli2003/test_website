@@ -41,24 +41,7 @@ img.emoji {
 	padding: 0 !important;
 }
 
-/* Hide the navigation button on screens smaller than 768px */
-@media (max-width: 768px) {
-  .wp-block-navigation__responsive-container {
-    display: none;
-  }
-}
 
-/* Styles for screens smaller than 768px */
-@media (max-width: 767px) {
-  /* Adjust the layout */
-  .container {
-    width: 100%;
-  }
-  /* Hide or adjust certain elements */
-  .sidebar {
-    display: none;
-  }
-}
 </style>
 	<link crossorigin="anonymous" rel="stylesheet" id="all-css-0-1" href="https://s0.wp.com/wp-content/mu-plugins/wpcom-theme-compat/rtl/blockbase-rtl.css?m=1633680961i&amp;cssminify=yes" type="text/css" media="all">
 <style id="blockbase_font_faces-inline-css">
@@ -2158,9 +2141,24 @@ var actionbardata = {"siteID":"221551516","siteURL":"http:\/\/aandy3.wordpress.c
   
 
   <style>
-    .image-container {
-      text-align: center;
-    }
+@media (max-width: 768px) {
+  .image-container {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  [style="overflow-x: auto; white-space: nowrap;"] {
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+}
+   
 
     .slideshow {
 			max-width: 100%;
@@ -2188,16 +2186,7 @@ html, body {
   }
 }
 
-/* Styles for screens smaller than 768px */
-@media (max-width: 767px) {
-  /* Adjust the layout */
-  .container {
-    width: 100%;
-  }
-  /* Hide or adjust certain elements */
-  .sidebar {
-    display: none;
-  }
+
 }
   </style>
   
