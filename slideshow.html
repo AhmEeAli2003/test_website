@@ -7,14 +7,22 @@
   max-width: 100%;
   position: relative;
   margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 .slideshow img {
-  display: none;
+  display: block;
   position: relative;
-  margin: auto;
-  width: auto;
-  height: 500px;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+  white-space: normal;
 }
 
 @media (max-width: 768px) {
