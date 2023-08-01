@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slideshow Example</title>
+	<style>
+		.slideshow {
+			max-width: 100%;
+			position: relative;
+			margin: auto;
+		}
+		.slideshow img {
+			display: none;
+			position: relative;
+			
+			margin: auto;
+			width: auto;
+			height: 500px;
+		}
+	</style>
+</head>
+<body>
+	<div class="slideshow">
+        <img src="https://aandy3.files.wordpress.com/2023/07/iphone-so-beautiful.jpeg" alt="Image1">
+        <img src="https://aandy3.files.wordpress.com/2023/07/oppo_5g.jpeg"             alt="Image2">
+        <img src="https://aandy3.files.wordpress.com/2023/07/oppo_rayeq.jpeg"          alt="Image3">
+        <img src="https://aandy3.files.wordpress.com/2023/07/samsung-s22-ultra.jpeg"   alt="Image4">
+        <img src="https://aandy3.files.wordpress.com/2023/07/samsung_3_cameras.jpeg"   alt="Image5">
+        <img src="https://aandy3.files.wordpress.com/2023/07/samsung_1.jpeg"           alt="Image6">
+        <img src="https://aandy3.files.wordpress.com/2023/07/samsung.jpeg"             alt="Image7">
+        <img src="https://aandy3.files.wordpress.com/2023/07/samsung-s22.jpeg"         alt="Image8">
+        <img src="https://aandy3.files.wordpress.com/2023/07/oppo_reno8.jpeg"          alt="Image9">
+        <img src="https://aandy3.files.wordpress.com/2023/07/oppo_1.jpeg"              alt="Image 10">
+        <img src="https://aandy3.files.wordpress.com/2023/07/oppo.jpeg"                alt="Image 11">
+        <img src="https://aandy3.files.wordpress.com/2023/07/iphone.jpeg"              alt="Image 12">
+	</div>
+	<script>
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("slideshow")[0].getElementsByTagName("img");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			slideIndex++;
+			if (slideIndex > slides.length) {
+				slideIndex = 1
+			}
+			slides[slideIndex-1].style.display = "block";
+			setTimeout(showSlides, 2000); // Change image every 2 seconds
+		}
+	</script>
+</body>
+</html>
