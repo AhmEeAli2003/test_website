@@ -3,19 +3,22 @@
 <head>
 	<title>Slideshow Example</title>
 	<style>
-		.slideshow {
-			max-width: 100%;
-			position: relative;
-			margin: auto;
-		}
-		.slideshow img {
-			display: none;
-			position: relative;
-			
-			margin: auto;
-			width: auto;
-			height: 500px;
-		}
+@media (max-width: 768px) {
+  .slideshow {
+    max-width: 100%;
+    position: relative;
+    margin: 20px auto;
+    height: auto;
+  }
+
+  .slideshow img {
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: auto;
+  }
+}
 	</style>
 </head>
 <body>
