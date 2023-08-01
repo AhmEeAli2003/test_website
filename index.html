@@ -2161,6 +2161,25 @@ html, body {
       direction: rtl;
       text-align: right;
     }
+	  
+/* Hide the navigation button on screens smaller than 768px */
+@media (max-width: 768px) {
+  .wp-block-navigation__responsive-container {
+    display: none;
+  }
+}
+
+/* Styles for screens smaller than 768px */
+@media (max-width: 767px) {
+  /* Adjust the layout */
+  .container {
+    width: 100%;
+  }
+  /* Hide or adjust certain elements */
+  .sidebar {
+    display: none;
+  }
+}
   </style>
   
   <script>
@@ -2213,23 +2232,3 @@ html, body {
   }
   </script>
 
-<style>
-/* Hide the navigation button on screens smaller than 768px */
-@media (max-width: 768px) {
-  .wp-block-navigation__responsive-container {
-    display: none;
-  }
-}
-
-/* Styles for screens smaller than 768px */
-@media (max-width: 767px) {
-  /* Adjust the layout */
-  .container {
-    width: 100%;
-  }
-  /* Hide or adjust certain elements */
-  .sidebar {
-    display: none;
-  }
-}
-</style>
