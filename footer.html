@@ -42,6 +42,12 @@
             </div>
           </div>
         </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
         <div class="row no-gutters social-container">
           <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
           <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-whatsapp"></span><span>whatsapp</span></a></div>
@@ -107,4 +113,27 @@ html, body {
       direction: rtl;
       text-align: right;
     }
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #3b5998;
+  color: #fff;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  margin: 0 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+}
 </style>
